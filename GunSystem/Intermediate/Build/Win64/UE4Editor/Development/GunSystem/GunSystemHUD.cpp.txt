@@ -1,0 +1,17 @@
+C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\Definitions.GunSystem.h
+C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Source\GunSystem\GunSystemHUD.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+E:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+E:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Inc\GunSystem\GunSystemHUD.generated.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/Canvas.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Public\CanvasItem.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/Font.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/FontImportOptions.h
+E:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\FontImportOptions.generated.h
+E:\EpicGames\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Fonts/FontProviderInterface.h
+E:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\SlateCore\FontProviderInterface.generated.h
+E:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Font.generated.h
+E:\EpicGames\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Canvas.generated.h

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\GunSystem.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{2C669878-D981-4E0B-AB83-52E132AA7CB3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GunSystem.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\GunSystemEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{510F8768-5A26-4A3B-A16A-8E00D407B361}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\GunSystem">
+      <UniqueIdentifier>{BA9BDD53-A542-46D1-AA69-970DB4DA5D93}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GunSystem\GunSystem.Build.cs">
+      <Filter>Source\GunSystem</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\GunSystem\GunSystem.cpp">
+      <Filter>Source\GunSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GunSystem\GunSystem.h">
+      <Filter>Source\GunSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GunSystem\GunSystemCharacter.cpp">
+      <Filter>Source\GunSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GunSystem\GunSystemCharacter.h">
+      <Filter>Source\GunSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GunSystem\GunSystemGameMode.cpp">
+      <Filter>Source\GunSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GunSystem\GunSystemGameMode.h">
+      <Filter>Source\GunSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GunSystem\GunSystemHUD.cpp">
+      <Filter>Source\GunSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GunSystem\GunSystemHUD.h">
+      <Filter>Source\GunSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GunSystem\GunSystemProjectile.cpp">
+      <Filter>Source\GunSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GunSystem\GunSystemProjectile.h">
+      <Filter>Source\GunSystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\GunSystem\Private">
+      <UniqueIdentifier>{8D1D9788-F9B8-4134-A71C-D942FA50DB70}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GunSystem\Private\Gun.cpp">
+      <Filter>Source\GunSystem\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GunSystem\Private\GunProjectile.cpp">
+      <Filter>Source\GunSystem\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\GunSystem\Public">
+      <UniqueIdentifier>{CCC1FF25-22F1-4EBB-86C4-AC683DBB6DD3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\GunSystem\Public\Gun.h">
+      <Filter>Source\GunSystem\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GunSystem\Public\GunProjectile.h">
+      <Filter>Source\GunSystem\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

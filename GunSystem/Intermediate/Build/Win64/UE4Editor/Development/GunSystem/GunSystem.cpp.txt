@@ -1,0 +1,2 @@
+C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\Definitions.GunSystem.h
+C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Source\GunSystem\GunSystem.h

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\cf\\source\\repos\\School\\UnrealFPSGunSystem\\GunSystem\\Source\\GunSystem\\GunSystem.Build.cs",
+		"C:\\Users\\cf\\source\\repos\\School\\UnrealFPSGunSystem\\GunSystem\\Source\\GunSystem.Target.cs",
+		"C:\\Users\\cf\\source\\repos\\School\\UnrealFPSGunSystem\\GunSystem\\Source\\GunSystemEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

@@ -1,0 +1,50 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\cf\source\repos\School\UnrealFPSGunSystem).
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-0773.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-0773.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-2279.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-2279.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-2714.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-2714.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-3557.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-3557.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-3816.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-3816.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5081.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5081.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5268.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5268.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5742.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5742.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5811.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-5811.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-6668.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-6668.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-6933.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-6933.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-8025.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-8025.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-8941.dll
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Binaries\Win64\UE4Editor-GunSystem-8941.pdb
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-0773.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-2279.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-2714.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-3557.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-3816.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-5081.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-5268.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-5742.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-5811.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-6668.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-6933.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-8025.lib
+  Deleted hot-reload file: C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem-8941.lib
+  Building GunSystemEditor...
+  Using Visual Studio 2019 14.28.29337 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 3 actions with 16 processes...
+    [1/3] UE4Editor-GunSystem.lib
+       Creating library C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem.lib and object C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem.exp
+    [2/3] UE4Editor-GunSystem.dll
+       Creating library C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem.suppressed.lib and object C:\Users\cf\source\repos\School\UnrealFPSGunSystem\GunSystem\Intermediate\Build\Win64\UE4Editor\Development\GunSystem\UE4Editor-GunSystem.suppressed.exp
+    [3/3] GunSystemEditor.target
+  Total time in Parallel executor: 0.79 seconds
+  Total execution time: 1.21 seconds

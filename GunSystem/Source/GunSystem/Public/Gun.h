@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Camera/CameraComponent.h"
+#include "Curves/CurveFloat.h"
 #include "Gun.generated.h"
 
 UCLASS()
@@ -44,7 +45,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float minRaycastDistance;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float maxRaycastDistance;
+	float maxRaycastDistance;
 
 
 	
@@ -61,6 +62,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UCameraComponent* camera;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UCurveFloat* horizontalSpread;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UCurveFloat* verticalSpread;
+
+
 	/*Burst Fire Variables*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool burstMode;
@@ -70,6 +77,14 @@ public:
 	int burstSize;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int currentBurstCount;
+
+	float spreadValue = 0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float spreadIncreaseRate = 0.03;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float spreadDecreaseRate = 0.01;
+
+
 
 
 

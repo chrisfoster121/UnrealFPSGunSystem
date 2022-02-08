@@ -32,10 +32,8 @@ void AGun::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	elapsedTime += DeltaTime;
 
-	UE_LOG(LogTemp, Warning, TEXT("Ammo STATS:"));
-	UE_LOG(LogTemp, Warning, TEXT("Current: %d"), ammoRemaining);
-	//UE_LOG(LogTemp, Warning, TEXT("Max: %d"), burstSize);
 	
+	//UE_LOG(LogTemp, Warning, TEXT("Firing: %s"), firing ? TEXT("true") : TEXT("false"));
 
 	if (!reloading && ammoRemaining != ammoCount)
 	{
@@ -64,20 +62,17 @@ void AGun::Tick(float DeltaTime)
 	}
 	else if (GetKeyState(RightFireKey) && ammoRemaining > 0)
 	{
+		firing = true;
 		if (burstMode)
 		{
 			if (!burstComplete)
 			{
-				//UE_LOG(LogTemp, Warning, TEXT("Calling Fire"));
 				Fire(DeltaTime);
 			}
-			/*UE_LOG(LogTemp, Warning, TEXT("BURST STATS:"));
-			UE_LOG(LogTemp, Warning, TEXT("Current: %d"), currentBurstCount);
-			UE_LOG(LogTemp, Warning, TEXT("Size: %d"), burstSize);*/
+			
 		}
 		else
 		{
-			//UE_LOG(LogTemp, Warning, TEXT("Calling Fire"));
 			Fire(DeltaTime);
 		}
 		
@@ -86,16 +81,18 @@ void AGun::Tick(float DeltaTime)
 	{
 		if (burstComplete && !GetKeyState(RightFireKey))
 		{
-			firing = false;
 			burstComplete = false;
-			currentBurstCount = 0;
 		}
+		
+		firing = false;
+		currentBurstCount = 0;
+		elapsedTime = 0;
 		
 	}
 	else
 	{
 		firing = false;
-		
+		currentBurstCount = 0;
 	}
 
 	if (ammoRemaining <= 0 && !reloading)
@@ -105,6 +102,12 @@ void AGun::Tick(float DeltaTime)
 		reloading = true;
 	}
 
+	if (firing == false)
+	{
+		spreadValue -= spreadDecreaseRate;
+		spreadValue = FMath::Clamp(spreadValue, 0.0f, 1.0f);
+	}
+	UE_LOG(LogTemp, Warning, TEXT("Spread Value: %f"), spreadValue);
 }
 
 
@@ -112,7 +115,6 @@ void AGun::Tick(float DeltaTime)
 void AGun::Fire(float DeltaTime)
 {
 	//elapsedTime += deltaTime;
-	firing = false;
 	if (burstMode)
 	{
 		if (elapsedTime >= (60.0 / RPM))
@@ -120,7 +122,10 @@ void AGun::Fire(float DeltaTime)
 
 			elapsedTime = 0;
 			SpawnRound(*spawnParams);
-			firing = true;
+			
+			spreadValue += 0.07;
+			spreadValue = FMath::Clamp(spreadValue, 0.0f, 1.0f);
+			
 			currentBurstCount++;
 			
 			if (currentBurstCount >= burstSize)
@@ -129,7 +134,6 @@ void AGun::Fire(float DeltaTime)
 			}
 		}
 
-		UE_LOG(LogTemp, Warning, TEXT("Calling Burst Fire"));
 		return;
 	}
 
@@ -138,11 +142,17 @@ void AGun::Fire(float DeltaTime)
 
 		elapsedTime = 0;
 		SpawnRound(*spawnParams);
-
-		firing = true;
-
-		UE_LOG(LogTemp, Warning, TEXT("Calling Fire"));
+		
+		spreadValue += spreadIncreaseRate;
+		spreadValue = FMath::Clamp(spreadValue, 0.0f, 1.0f);
+				
+		currentBurstCount++;
+		return;
 	}
+
+	spreadValue -= spreadDecreaseRate / 10.0f;
+	spreadValue = FMath::Clamp(spreadValue, 0.0f, 1.0f);
+	
 }
 
 
@@ -183,10 +193,22 @@ void AGun::SpawnRound(FActorSpawnParameters SpawnParams)
 		FVector dir = RaycastFromCamera() - (GetActorLocation());
 		//LogFVector(dir);
 		dir.Normalize();
-		bullet->SetInitialDirection(dir);
-	
 
-	//
+		float spreadPercentage = spreadValue/1.0f;
+		spreadPercentage = FMath::Clamp(spreadPercentage, 0.0f, 1.0f);
+		
+		float horizontalSpreadVal = horizontalSpread->GetFloatValue(spreadPercentage);
+		float verticalSpreadVal = verticalSpread->GetFloatValue(spreadPercentage);
+
+		dir = dir.RotateAngleAxis(horizontalSpreadVal * 10, GetActorUpVector());
+		//LogFVector(dir);
+		dir = dir.RotateAngleAxis(-verticalSpreadVal * 10, GetActorRightVector());
+		//LogFVector(dir);
+
+
+
+		bullet->SetInitialDirection(dir);
+
 	}
 
 	ammoRemaining--;

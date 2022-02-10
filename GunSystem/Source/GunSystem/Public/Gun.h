@@ -29,7 +29,7 @@ public:
 
 	void SpawnRound(FActorSpawnParameters spawnParams);
 
-	FVector RaycastFromCamera();
+	FVector RaycastFromBarrel();
 	void LogFVector(FVector vector) { UE_LOG(LogTemp, Warning, TEXT("X: %f  Y: %f  Z: %f"), vector.X, vector.Y, vector.Z); };
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -59,8 +59,7 @@ public:
 	bool reloading = false;
 	float elapsedTime = 0;
 	FActorSpawnParameters* spawnParams;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UCameraComponent* camera;
+	
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UCurveFloat* horizontalSpread;

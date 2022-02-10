@@ -190,7 +190,7 @@ void AGun::SpawnRound(FActorSpawnParameters SpawnParams)
 	{
 		bullet->SetInitialSpeed(bulletSpeed);
 
-		FVector dir = RaycastFromCamera() - (GetActorLocation());
+		FVector dir = RaycastFromBarrel() - (GetActorLocation());
 		//LogFVector(dir);
 		dir.Normalize();
 
@@ -217,19 +217,14 @@ void AGun::SpawnRound(FActorSpawnParameters SpawnParams)
 
 }
 
-FVector AGun::RaycastFromCamera()
+FVector AGun::RaycastFromBarrel()
 {
-	FVector cameraForward = camera->GetForwardVector();
-	FVector cameraLoc = camera->GetComponentLocation();
-
-
-
-
+	
 	UWorld* World = GetWorld();
 	FHitResult result;
-	FVector start = cameraLoc + cameraForward * minRaycastDistance;
+	FVector start = GetActorLocation() + GetActorForwardVector() * minRaycastDistance;
 	FCollisionQueryParams CollisionParameters;
-	FVector end = cameraLoc + cameraForward * maxRaycastDistance;
+	FVector end = GetActorLocation() + GetActorForwardVector() * maxRaycastDistance;
 
 	World->LineTraceSingleByChannel(result, start, end, ECollisionChannel::ECC_Visibility);
 
@@ -239,9 +234,7 @@ FVector AGun::RaycastFromCamera()
 	}
 	else
 	{
-		return cameraLoc + cameraForward * maxRaycastDistance;
+		return GetActorLocation() + GetActorForwardVector() * minRaycastDistance;
 	}
-
-
 }
 
